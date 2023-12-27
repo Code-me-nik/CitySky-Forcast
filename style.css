@@ -1,0 +1,91 @@
+body{
+  margin:0;
+  padding:0;
+  background:linear-gradient(rgb(45, 44, 44),black);
+  background-size: cover;
+  min-height:88vh;
+}
+
+section{
+  width:800px;
+  height:500px;
+  border-radius: 20px;
+  margin:70px auto;
+  display:grid;
+  grid-template-columns:50% 50%;
+  overflow: hidden ;
+  box-shadow:10px 10px 20px rgba(37, 34, 34, 0.504);
+  background-color: white ;
+}
+
+.weatherapplication{
+  width:400px;
+  z-index:2;
+  display: flex ;
+  justify-content: center ;
+  align-items: center ;
+  flex-direction: column ;
+  background:url('/background images/dramatic-sky-tranquil-scene-dusk-generated-by-ai.jpg');
+  background-repeat: no-repeat;
+  background-position: center center ;
+  background-size: cover;
+}
+
+header{
+  width:90%;
+  height:40px;
+  font-size: 15px;
+  text-transform: capitalize ;
+  color:white;
+  display: flex;
+  flex-direction: column ;
+  align-items: flex-end ;
+  justify-content: flex-end ;
+  padding:10px;
+}
+header h3{
+  margin:0;
+}
+
+h2{
+  padding:10px;
+  text-transform: capitalize ;
+  color:white;
+}
+menu{
+  display: flex ;
+  justify-content: space-around ;
+  padding: 5px;
+  width:90%
+}
+
+menu input{
+  height:30px;
+  width:80%;
+  border-radius:20px;
+  padding-left:10px;
+  border:0;
+  background: rgba(255, 255, 255, 0.828);
+}
+
+menu button{
+  border-radius:20px;
+  height:30px;
+  width:30px;
+  border:0;
+  background: rgba(255, 255, 255, 0.828);
+  color:rgb(39, 41, 48);
+}
+
+.weatherdetails{
+  background-color: white;
+  padding:20px;
+  border-radius: 20px ;
+}
+
+.weatherinfo{
+  border:2px solid rgb(23, 29, 38);
+  display: grid;
+  grid-template-columns:50% 50%;
+  grid-template-rows:33% 33% 33%;
+}

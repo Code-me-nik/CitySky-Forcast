@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- all icons link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+
+  <!-- font link  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+  <!-- css file  -->
+  <link rel="stylesheet" href="style.css">
+
+  <title> weather application </title>
+</head>
+
+<body>
+
+  <section>
+    <div class="weatherapplication">
+
+      <header>
+        <h3> current location </h3>
+        <div class="locationname">
+          location , name
+        </div>
+      </header>
+
+      <h2> find weather condition near you </h2>
+
+      <menu>
+        <input placeholder="city name" type="input" class="searchcityfield">
+        <button type="button" class="searchbtn">
+          <i class="bi bi-search"></i>
+        </button>
+      </menu>
+
+    </div>
+
+    <div class="weatherdetails">
+
+      <h1> Today </h1>
+
+      <div class="weatherinfo">
+        <h1> 32 &deg; C </h1>
+        <h3> Sunny </h3>
+        <span class="weathericon">
+          <img src="/icons/01d.svg" alt="weather icon">
+        </span>
+        <p>
+          <span>Monday</span>
+          <span> 27 </span>,
+          <span> December</span>
+          <span>2023</span>
+        </p>
+        <hr>
+        <p> Humidity : <span>66%</span> </p>
+        <p> Cloud cover : <span>40%</span> </p>
+        <p> visibility : <span>5km</span> </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
