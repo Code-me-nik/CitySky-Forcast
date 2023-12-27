@@ -12,7 +12,8 @@ Welcome to the Weather Application repository! This project provides a simple an
 
 ## Preview
 
-![project image](<project preview/project preview.png>)
+![project preview](<project preview/project preview.png>)
+
 
 
 ## How to Use
