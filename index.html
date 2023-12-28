@@ -17,60 +17,63 @@
   <!-- css file  -->
   <link rel="stylesheet" href="style.css">
 
+  <!-- weather icon file  -->
+
   <title> weather application </title>
 </head>
 
 <body>
 
-  <section>
-    <div class="weatherapplication">
+  <div class="maindiv">
 
-      <header>
-        <h3> current location </h3>
-        <div class="locationname">
-          location , name
-        </div>
-      </header>
-
-      <h2> find weather condition near you </h2>
-
-      <menu>
-        <input placeholder="city name" type="input" class="searchcityfield">
-        <button type="button" class="searchbtn">
-          <i class="bi bi-search"></i>
-        </button>
-      </menu>
-
+    <div class="div1">
+      <h2 id="weekname"> weekname </h2>
+      <h4 id="date"> todays / date / </h4>
+      <h3 id="location"> <i class="bi bi-geo-alt"></i> location </h3>
+      <span class="sunicon" id="weather-icon">
+        <img id="changableicon" src="icons/01d.svg">
+      </span>
+      <h1 id="temp"> 12 °C </h1>
+      <span id="description">how's day</span>
     </div>
 
-    <div class="weatherdetails">
+    <div class="div2">
 
-      <h1> Today </h1>
-
-      <div class="weatherinfo">
-        <h1> 32 &deg; C </h1>
-        <h3> Sunny </h3>
-        <span class="weathericon">
-          <img src="/icons/01d.svg" alt="weather icon">
-        </span>
-        <p>
-          <span>Monday</span>
-          <span> 27 </span>,
-          <span> December</span>
-          <span>2023</span>
-        </p>
-        <hr>
-        <p> Humidity : <span>66%</span> </p>
-        <p> Cloud cover : <span>40%</span> </p>
-        <p> visibility : <span>5km</span> </p>
+      <div class="phw">
+        <h3> Precipitation <span>0 %</span> </h3>
+        <h3> Humidity <span id="humidity">43</span> </h3>
+        <h3>Wind <span id="wind-speed">0 km/h </span> </h3>
       </div>
 
+      <div class="weaklyweather">
+
+        <!-- first day  -->
+        <div class="alldays firstday">
+          <i class="bi bi-brightness-high"></i>
+          <h3> wens </h3>
+          <span class="temp">
+            29&#8451;
+          </span>
+        </div>
+        
+        <div class="description">
+          this is the daily data which provide by the free weather API
+        </div>
+
+      </div>
+
+      <div class="changelocation">
+        <input id="searchlocation" placeholder="insert your city name">
+        <button type="button" id="setlocation">
+          <i class="bi bi-geo-alt"></i>
+        </button>
+      </div>
     </div>
 
-  </section>
+  </div>
+
 
   <script src="script.js"></script>
 
 </body>
-
 </html>
