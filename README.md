@@ -11,8 +11,7 @@ Welcome to the Weather Application repository! This project provides a simple an
 
 
 ## Preview
-![citysky forcast](https://github.com/Code-me-nik/CitySky-Forcast/assets/123573794/0f8c6e17-6138-47b4-a899-1c9ad5c88a60)
-
+![project preview](<project preview.png>)
 
 
 

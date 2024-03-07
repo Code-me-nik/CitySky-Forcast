@@ -6,7 +6,7 @@ function getcityweatherdata() {
    // get cityname from input tag
    let cityname = document.getElementById('searchlocation').value;
 
-   const apiurl = " https://api.openweathermap.org/data/2.5/weather?q=" + cityname + "&appid=b45a65dcd5eca22b2170426666d39a20&units=metric";
+   const apiurl = `https://api.openweathermap.org/data/2.5/weather?q=${cityname} &appid=b45a65dcd5eca22b2170426666d39a20&units=metric`;
 
    fetch(apiurl)
       .then(function (response) {
