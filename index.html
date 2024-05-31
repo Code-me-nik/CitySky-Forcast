@@ -14,57 +14,59 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
   <!-- css file  -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- weather icon file  -->
 
   <title> citysky forecast </title>
 </head>
 
-<body>
+<body class="d-flex justify-content-center mt-5">
 
-  <div class="maindiv">
+  <div class="maindiv rounded-5 text-capitalize d-grid">
 
-    <div class="div1">
-      <h2 id="weekname"> weekname </h2>
-      <h4 id="date"> todays / date / </h4>
-      <h3 id="location"> <i class="bi bi-geo-alt"></i> location </h3>
-      <span class="sunicon" id="weather-icon">
+    <div class="div1 rounded-5 p-4 text-white">
+      <h2 id="weekname" class="h3 m-0 "> weekname </h2>
+      <h4 id="date" class="m-0"> todays / date / </h4>
+      <h3 id="location" class="m-0"> <i class="bi bi-geo-alt"></i> location </h3>
+      <div class="sunicon d-flex justify-content-center" id="weather-icon">
         <img id="changableicon" src="icons/01d.svg">
-      </span>
-      <h1 id="temp"> 12 °C </h1>
-      <span id="description">how's day</span>
+      </div>
+      <h1 id="temp" class="d-flex justify-content-center align-items-center display-1"> 12 °C </h1>
+      <span id="description" class="font-weight-light">how's day</span>
     </div>
 
-    <div class="div2">
+    <div class="div2 text-white p-4 d-grid">
 
-      <div class="phw">
-        <h3> Precipitation <span>0 %</span> </h3>
-        <h3> Humidity <span id="humidity">43</span> </h3>
-        <h3>Wind <span id="wind-speed">0 km/h </span> </h3>
+      <div class="phw d-flex justify-content-center align-items-center flex-column">
+        <h3 class="d-flex justify-content-between w-100"> Precipitation <span>0 %</span> </h3>
+        <h3 class="d-flex justify-content-between w-100"> Humidity <span id="humidity">43</span> </h3>
+        <h3 class="d-flex justify-content-between w-100">Wind <span id="wind-speed">0 km/h </span> </h3>
       </div>
 
-      <div class="weaklyweather">
+      <div class="weaklyweather d-grid">
 
         <!-- first day  -->
-        <div class="alldays firstday">
-          <i class="bi bi-brightness-high"></i>
+        <div
+          class="alldays h5 firstday rounded-3 d-flex justify-content-center align-items-center flex-column bg-white text-dark">
+          <i class="bi bi-brightness-high h3"></i>
           <h3> wens </h3>
           <span class="temp">
             29&#8451;
           </span>
         </div>
 
-        <div class="description">
+        <div class="description p-4">
           this is the daily data which provide by the free weather API
         </div>
 
       </div>
 
-      <div class="changelocation">
+      <div class="changelocation d-flex justify-content-around align-items-center">
 
-        <select id="searchlocation" name="city" class="form-select">
+        <select id="searchlocation" name="city" class="form-select w-75 rounded-pill custom-select">
           <option value="Achalpur">Achalpur</option>
           <option value="Ahiri">Ahiri</option>
           <option value="Ahmadnagar">Ahmadnagar</option>
@@ -368,9 +370,9 @@
           <option value="Yeola">Yeola</option>
         </select>
 
-        <button type="button" id="setlocation">
-          <i class="bi bi-geo-alt"></i> 
-        </button> 
+        <button type="button" id="setlocation" class="text-white rounded-circle border-0 ">
+          <i class="bi bi-geo-alt"></i>
+        </button>
       </div>
     </div>
 

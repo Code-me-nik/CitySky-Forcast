@@ -4,156 +4,43 @@ body {
 
 .maindiv {
   width: 700px;
-  background-color: rgb(19, 19, 19);
   height: 450px;
-  border-radius: 20px;
-  margin: 90px auto;
-  display: grid;
+  background-color: rgb(19, 19, 19);
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
   font-family: 'Ubuntu', sans-serif;
-  text-transform: capitalize;
 }
 
 .div1 {
-  border-radius: 20px;
   background: linear-gradient(130deg, #86EBEF, #5D5ECB);
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 8% 8% 8% 35% 35%;
-  padding: 20px;
-  color: white;
-}
-
-h2 {
-  font-size: 25px;
-  margin: 0;
-}
-
-h3,
-h4 {
-  margin: 0;
-}
-
-#weather-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#changableicon {
-  height: 100%;
-  width: 400px;
-  padding-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  font-size: 70px;
-  margin: 0;
-  display: flex;
-  justify-content: start;
-  align-items: end;
-  padding: 10px;
 }
 
 .div2 {
-  display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 40% 30% 30%;
-  color: white;
-  padding: 20px;
-}
-
-.phw {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.phw h3 {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 5px;
 }
 
 .weaklyweather {
-  display: grid;
-  grid-template-columns: 25% 75% ;
-}
-
-.weaklyweather div {
-  border-radius: 10px;
-}
-
-.alldays {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  font-size: 23px;
-}
-
-.alldays h3 {
-  text-transform: capitalize;
-}
-
-.alldays i {
-  font-size: 30px;
-}
-
-.firstday {
-  color: rgb(40, 40, 51);
-  background-color: white;
-}
-.description{
-  padding:20px;
-  margin:3px;
-  font-weight: lighter;
-}
-.changelocation {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  grid-template-columns: 25% 75%;
 }
 
 #setlocation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
-  color: white;
   font-size: 23px;
   cursor: pointer;
 }
 
-#setlocation:focus{
-  outline: 2px solid white ;
+#setlocation:focus {
+  outline: 2px solid white;
 }
 
-#searchlocation {
-  height: 40px;
-  width: 80%;
-  padding-left: 20px;
-  font-size: 16px;
-}
-#searchlocation:focus{
+#searchlocation:focus {
   outline: none;
-}
-
-#searchlocation::placeholder {
-  color: white;
 }
 
 #setlocation,
 #searchlocation {
-  border: 0;
   box-shadow: 0 0 30px #4a4b84;
   background: linear-gradient(130deg, #86EBEF, #5D5ECB);
-  border-radius: 50px;
 }
